@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Sabrina</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="illustraties">
+    <header>
+        <!-- /* ********************************************************************* */
+        /* NAVIGATIE BRON: https://codepen.io/melnik909/pen/JpJPYp AUTHOR: STAS MELNIKOV*/ 
+        /* ********************************************************************* */  --> 
+          <div class="menu">
+            <nav class="menu__nav">
+              <ul class="menu__list nav-list">
+                <li class="navigatie"><a href="index.html" class="menu__link nav-link">Over mij</a></li>
+                <li class="navigatie"><a href="projecten.html" class="menu__link nav-link">Projecten</a></li>
+                <li class="navigatie"><a href="Illustraties.html" class="menu__link nav-link">Illustraties</a></li>
+                <li class="navigatie"><a href="cv.html" class="menu__link nav-link">CV</a></li>
+                <li class="navigatie"><a href="contact.html" class="menu__link nav-link">Contact</a></li>
+              </ul>
+            </nav>
+
+            <button class="menu__toggle nav-button" type="button">
+              <span class="menu__hamburger m-hamburger"><span class="m-hamburger__label"><span class="menu__toggle-hint"></span></span></span>
+            </button>
+          </div>
+    </header>
+
+    <main>
+        <h1>Illustraties</h1>
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+          <img src="images/blackwidow.png" alt="Black Widow gemaakt in Illustrator" style="width:100%">
+          </div>
+      
+          <div class="mySlides fade">
+          <img src="images/kreta.jpg" alt="Familiefoto getekend in ProCreate" style="width:100%">
+          </div>
+  
+          <div class="mySlides fade">
+              <img src="images/gotg.png" alt="Guardians of the Galaxy gemaakt in Illustrator" style="width:100%">
+          </div>
+  
+          <div class="mySlides fade">
+              <img src="images/statueofliberty.jpg" alt="Statue of Liberty gemaakt in Illustrator" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/boekjes.png" alt="Illustratie van getekende boekcovers" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/simplewild.png" alt="Illustratie van het boek The Simple Wild van K.A. Tucker" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/uphuis.png" alt="Illustratie van het Up huis" style="width:100%">
+          </div>
+      
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+
+        <section>
+          <h2>Dit zijn een aantal illustraties die ik heb gemaakt. Ik teken veel via mijn iPad, daarvoor gebruik ik de app Procreate. Dit is echt een aanrader voor een ieder die van digital art houdt. Ook vind ik het erg leuk om aan de slag te gaan in Adobe Illustrator. De Black Widow poster en Guardians of the Galaxy poster zijn daarmee gemaakt.</h2>
+        
+          <img src="images/blackwidow.png" alt="Black Widow gemaakt in Illustrator">
+          <img src="images/kreta.jpg" alt="Familiefoto getekend in ProCreate">
+          <img src="images/gotg.png" alt="Guardians of the Galaxy gemaakt in Illustrator">
+          <img src="images/statueofliberty.jpg" alt="Statue of Liberty gemaakt in Illustrator">   
+          <img src="images/boekjes.png" alt="Illustratie van getekende boekcovers">
+          <img src="images/simplewild.png" alt="Illustratie van het boek The Simple Wild van K.A. Tucker">         
+          <img src="images/uphuis.png" alt="Illustratie van het Up huis">
+        </section>
+    </main>
+      <script src="js/portfolio.js"></script>
+</body>
+</html>
