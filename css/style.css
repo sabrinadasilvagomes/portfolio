@@ -70,7 +70,8 @@ body {
     background-color: #f5ece3;
 }
 
-.homepage section:nth-of-type(2) {
+.homepage section:nth-of-type(2),
+.startpage {
     background-color: #e8d8d3;
 }
 
@@ -295,7 +296,7 @@ h1 {
 .menu ul li a {
     text-decoration: none;
     color: var(--KopTekst);
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'josefinbold';
     font-weight: 700;
     text-transform: uppercase;
@@ -319,6 +320,63 @@ h1 {
 
 
 
+/* ********************************************************************* */
+/* ********************************************************************* */
+/* VERTALING ICON*/
+/* ********************************************************************* */
+/* ********************************************************************* */
+.vertaling a img {
+    width: 2em;
+    position: absolute;
+    left: 0.5em; top: 0.5em;
+}
+
+.cv .vertaling a img,
+.cvaanvullend .vertaling a img,
+.cvopleiding .vertaling a img {
+    margin: 0;
+    width: 2em;  
+}
+
+
+
+
+/* ********************************************************************* */
+/* ********************************************************************* */
+/* ********************************************************************* */
+/* STARTPAGE*/
+/* ********************************************************************* */
+/* ********************************************************************* */
+/* ********************************************************************* */
+
+
+/* VLAGGEN */
+.startpage section a img {
+    width: 4em;
+    position: absolute;
+    z-index: 30;
+}
+
+/* VLAG NL */
+.startpage section a:nth-of-type(1) img:nth-of-type(1) {
+    top: 35%;
+    right: 20%;
+}
+
+/* VLAG ENG */
+.startpage section a:last-of-type img:last-of-type {
+    top:45%;
+    right: 20%;
+}
+
+/* STARTPAGE BLAD */
+.startpage section img:nth-of-type(3){
+    width: 8em;
+    position: absolute;
+    right: 0; bottom: 0;
+}
+
+
 
 /* ********************************************************************* */
 /* ********************************************************************* */
@@ -329,14 +387,16 @@ h1 {
 /* ********************************************************************* */
 
 /* standaard homepage */
-.homepage {
+.homepage,
+.startpage {
     display: block;
     width: fit-content;
     flex-wrap: wrap;
 }
 
 /* Alle sections */
-.homepage section {
+.homepage section,
+.startpage section {
     display: block;
     height:100%;
     width:100%;
@@ -366,12 +426,16 @@ h1 {
 .homepage section img:nth-of-type(3),
 .homepage section h1,
 .homepage section:nth-of-type(3) img:nth-of-type(2),
-.homepage section:nth-of-type(3) img:nth-of-type(3) {
+.homepage section:nth-of-type(3) img:nth-of-type(3),
+.startpage section > img:first-of-type,
+.startpage section img:nth-of-type(2),
+.startpage section h1 {
     display: none; 
 }
 
 /* SABRINA IMG KLEIN DEVICE */
-.homepage section img:last-of-type {
+.homepage section img:last-of-type,
+.startpage section > img:last-of-type {
     position: absolute;
     margin:  auto;
     z-index: 20;
@@ -384,7 +448,8 @@ h1 {
 
 .homepage section:nth-of-type(1) img:last-of-type,
 .homepage section:nth-of-type(2) img:last-of-type,
-.homepage section:nth-of-type(3) img:last-of-type {
+.homepage section:nth-of-type(3) img:last-of-type,
+.startpage section img:last-of-type {
     margin-left: 2em;
 }
 
@@ -427,7 +492,8 @@ h1 {
 @media (min-width:30em) {
     .homepage section:nth-of-type(1) img:last-of-type,
     .homepage section:nth-of-type(2) img:last-of-type,
-    .homepage section:nth-of-type(3) img:last-of-type {
+    .homepage section:nth-of-type(3) img:last-of-type,
+    .startpage section img:last-of-type {
         margin-left: 3em;
     }
 }
@@ -438,15 +504,36 @@ h1 {
     .homepage section img:nth-of-type(3),
     .homepage section h1,
     .homepage section:nth-of-type(3) img:nth-of-type(2),
-    .homepage section:nth-of-type(3) img:nth-of-type(3) {
+    .homepage section:nth-of-type(3) img:nth-of-type(3),
+    .startpage section img:first-of-type,
+    .startpage section img:nth-of-type(2),
+    .startpage section h1   {
         display: block; 
     }   
 
     /* sabrina img niet zichtbaar klein device */
-   .homepage section img:last-of-type {
+   .homepage section img:last-of-type,
+   .startpage section > img:last-of-type {
         display: none;
     }
-    
+
+    /* vlaggen */
+    .startpage section a img {
+        width: 4.5em;
+        height: 3em;
+    } 
+
+    .startpage section a:nth-of-type(1) img:nth-of-type(1) {
+        top: 18%;
+        right: 22%;
+    }
+
+    .startpage section a:nth-of-type(2) img:nth-of-type(1) {
+        top: 18%;
+        right: 8%;
+    }
+
+
     .homepage section:nth-of-type(3) span:nth-of-type(1),
     .homepage section:nth-of-type(5) span:nth-of-type(1) {
         font-family: 'josefinbold';
@@ -460,7 +547,8 @@ h1 {
     }
 
     /* Sabrina img groot device */
-    .homepage section img:first-of-type {
+    .homepage section img:first-of-type,
+    .startpage section > img:first-of-type {
         margin:  auto; 
         width: auto;
         height: auto;
@@ -469,7 +557,8 @@ h1 {
     }
 
     /* plaatsing blad 2 + afmetingen */
-    .homepage section:nth-of-type(1) img:nth-of-type(3) {
+    .homepage section:nth-of-type(1) img:nth-of-type(3),
+    .startpage section img:nth-of-type(2) {
         width: 7em;
         position: absolute;
         left: 0; top: 10% ;
@@ -512,7 +601,10 @@ h1 {
     }
 
     /* teksten h1 groot device */
-    .homepage section h1 {
+
+    
+    .homepage section h1,
+    .startpage section h1 {
         position: absolute;
         max-width: 15em;
         top: 3em;
@@ -520,6 +612,10 @@ h1 {
 
         font-size: 0.9em;
         text-align: center;
+    }
+
+    .startpage section h1 {
+        font-size: 1.2em;
     }
 
     .homepage section:nth-of-type(1) h1 {
@@ -549,9 +645,26 @@ h1 {
 }
 
 @media (min-width:50em) {
-    .homepage section h1 {
+    .homepage section h1,
+    .startpage section h1 {
         padding-right: 2em;
     }
+
+        /* vlaggen */
+        .startpage section a img {
+            width: 6em;
+            height: 4em;
+        } 
+    
+        .startpage section a:nth-of-type(1) img:nth-of-type(1) {
+            top: 22%;
+            right: 25%;
+        }
+    
+        .startpage section a:nth-of-type(2) img:nth-of-type(1) {
+            top: 22%;
+            right: 12%;
+        }
 }
 
 @media (min-width:60em) {
@@ -567,7 +680,8 @@ h1 {
     .homepage section:nth-of-type(3) img:nth-of-type(3),
     .homepage section:nth-of-type(4) img:nth-of-type(3),
     .homepage section:nth-of-type(5) img:nth-of-type(3),
-    .homepage section:nth-of-type(6) img:nth-of-type(3) {
+    .homepage section:nth-of-type(6) img:nth-of-type(3),
+    .startpage section img:nth-of-type(3) {
         width: 12em;
     }
 
@@ -575,7 +689,8 @@ h1 {
     .homepage section:nth-of-type(2) img:nth-of-type(2),
     .homepage section:nth-of-type(4) img:nth-of-type(2),
     .homepage section:nth-of-type(5) img:nth-of-type(2),
-    .homepage section:nth-of-type(6) img:nth-of-type(2){
+    .homepage section:nth-of-type(6) img:nth-of-type(2),
+    .startpage section img:nth-of-type(2)    {
         width: 13em;
     }
 
@@ -590,10 +705,27 @@ h1 {
 
 
 @media (min-width:70em) {
-    .homepage section h1 {
+    .homepage section h1,
+    .startpage section h1 {
         padding-right: 5em;
         font-size: 1.2em;
     }
+
+    .startpage section h1 {
+        font-size: 1.5em;
+        padding-right: 2em;
+    }
+
+    /* VLAGGEN */
+    .startpage section a:nth-of-type(1) img:nth-of-type(1) {
+        top: 25%;
+        right: 20%;
+    }
+
+    .startpage section a:nth-of-type(2) img:nth-of-type(1) {
+        top: 25%;
+        right: 10%;
+}
 }
 
 @media (min-width:80em) {
@@ -601,9 +733,24 @@ h1 {
         padding-right: 7em;
     }
 
+    .startpage section h1 {
+        padding-right: 5em;
+    }
+
     /* button bekijk projecten section 2 */
     .homepage section:nth-of-type(2) a {
         margin-left: 4em;
+    }
+
+    /* VLAGGEN */
+    .startpage section a:nth-of-type(1) img:nth-of-type(1) {
+        top: 25%;
+        right: 21%;
+    }
+    
+    .startpage section a:nth-of-type(2) img:nth-of-type(1) {
+        top: 25%;
+        right: 12%;
     }
 }
 
@@ -624,19 +771,22 @@ h1 {
 <!--************************************************************************* --> */
 
 .projectnavigatie {
-    width: 100%;
+    width: 98%;
 }
 
 .projectnavigatie ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 0;
     flex-wrap: wrap;
-    gap: 0.5em;
+    gap: 0.6em;
     padding-top: 0;
     
     list-style: none;
+}
+
+.projectnavigatie ul {
+    padding: 0;
 }
 
 .projectnavigatie li {
@@ -861,6 +1011,10 @@ h1 {
         max-width: 45em;
     }
 
+    .cvopleiding h5:last-of-type {
+        padding-bottom: 20em;
+    }
+
     /* TEKSTEN PROJECTEN */
     .projecten h2,
     .passieproject h2,
@@ -1059,6 +1213,10 @@ h1 {
     right:0px;
     border-radius: 3px 0 0 3px;
   }
+
+  .prev {
+      left: 0px;
+  }
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
@@ -1091,11 +1249,14 @@ h1 {
 /* ********************************************************************* */ 
 @media (min-width:30em) {
     .slideshow-container {
-        width: 22em;
+        max-width: 28em;
+        margin-left: 2em; margin-right: 2em;
+        margin-top: 1em;
+        margin-bottom: 0;
     }
 }
 
-@media (min-width:50em) {
+@media (min-width:34em) {
     .slideshow-container, 
     .prev,
     .next,
@@ -1163,9 +1324,12 @@ h1 {
     max-width: 40em;
 }
 
-.cvaanvullend,
-.cvopleiding {
+.cvaanvullend {
     padding-bottom: 15em!important;
+}
+
+.cvopleiding {
+    padding-bottom: 30em!important;
 }
 
 .cvopleiding{
@@ -1176,7 +1340,8 @@ h1 {
     background-color: var(--BackgroundSlideThree);
 }
 
-.cv h2:nth-of-type(2) {
+.cv h2:nth-of-type(2),
+.cvopleiding h2:nth-of-type(2) {
     margin-top: 4em;
 }
 
@@ -1209,11 +1374,15 @@ h1 {
     font-family: 'josefin';
 }
 
+.cv p:last-of-type{
+    padding-bottom: 15em;
+}
+
 /* AFBEELDING BLAD CV */
 .cv img:last-of-type {
     width: 8em;
     position: absolute;
-    right: 0; bottom: -190%;
+    right: 0; bottom: -220%;
     margin: auto;
 }
 
@@ -1227,28 +1396,40 @@ h1 {
 .cvopleiding img:last-of-type {
     width: 8em;
     position: absolute;
-    right: 0; bottom: -50%;
+    right: 0; bottom: -100%;
     margin: auto;
 }
 
 /* ********************************************************************* */
 /* GROTER DEVICE */
 /* ********************************************************************* */ 
+
+@media (min-width:50em) {
+    .cv p:last-of-type{
+        padding-bottom: 10em;
+    }
+}
+
+
 @media (min-width:70em) {
-    .cv img:last-of-type,
-    .cvaanvullend img:last-of-type,
-    .cvopleiding img:last-of-type{
+    .cv main img:last-of-type,
+    .cvaanvullend main img:last-of-type,
+    .cvopleiding main img:last-of-type{
         display: none!important;
     }
 
-    .cv img:last-of-type {
+    .cv main img:last-of-type {
         display: none!important;
     }
 
-    .cv section img:last-of-type, 
-    .cvaanvullend section img:last-of-type,
-    .cvopleiding section img:last-of-type {
+    .cv section > img:last-of-type, 
+    .cvaanvullend section > img:last-of-type,
+    .cvopleiding section > img:last-of-type {
         display: block!important;
+    }
+
+    .cv p:last-of-type{
+        padding-bottom: 15em;
     }
 }
 
@@ -1274,7 +1455,7 @@ h1 {
     font-size: 1em;
 }
 
-.contact img {
+.contactopnemen img {
     width: 5em;
     margin-left: auto;
     margin-right: auto;
@@ -1296,7 +1477,7 @@ h1 {
 
 .contactopnemen h2 {
     text-align: center;
-    margin: 2em;
+    margin: 1em 2em 2em 2em;
 }
 
 /* ********************************************************************* */
@@ -1307,7 +1488,7 @@ h1 {
         display: flex;
     }
 
-    .contact img {
+    .contactopnemen img {
         width: 7em;
         display: flex;
         margin: 10em 5em 2em;
