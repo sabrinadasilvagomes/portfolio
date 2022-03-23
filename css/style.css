@@ -346,9 +346,6 @@ h1 {
 @media (max-width:40em) {
     .contact .vertaling a img,
     .contactengels .vertaling a img,
-    .cv .vertaling a img,
-    .cvaanvullend .vertaling a img,
-    .cvopleiding .vertaling a img,
     .illustraties .vertaling a img,
     .programmeren .vertaling a img,
     .projecten .vertaling a img,
@@ -1419,15 +1416,11 @@ h1 {
     font-family: 'josefin';
 }
 
-.cv p:last-of-type{
-    padding-bottom: 15em;
-}
-
 /* AFBEELDING BLAD CV */
 .cv img:last-of-type {
     width: 8em;
     position: absolute;
-    right: 0; bottom: -220%;
+    right: 0;
     margin: auto;
 }
 
@@ -1441,7 +1434,7 @@ h1 {
 .cvopleiding img:last-of-type {
     width: 8em;
     position: absolute;
-    right: 0; bottom: -100%;
+    right: 0;
     margin: auto;
 }
 
