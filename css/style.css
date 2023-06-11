@@ -776,7 +776,7 @@ h1 {
     text-align: center;
     font-size: 0.9em;
 
-    margin-top: 0.5em;
+    margin-top: 2.7em;
     margin-bottom: 3em;
 }
 
@@ -821,6 +821,7 @@ h1 {
 
 /* GEWONE TEKST PROJECTEN */
 .projecten section p,
+.projecten section ul li,
 .projectpage3 section p,
 .projectpage2 section p,
 .projectpage4 section p {
@@ -861,7 +862,7 @@ h1 {
 
 /* PROJECT VIDEO */
 .projecten video {
-    width: 90%;
+    width: 100%;
 }
 
 .projectpage3 video {
@@ -888,7 +889,19 @@ h1 {
 .projecten section p:nth-of-type(42),
 .projecten section p:nth-of-type(43)        {
     font-family: 'josefinbold';
-    padding-top: 1em;
+}
+
+.projecten section p:nth-of-type(8),
+.projecten section p:nth-of-type(10),
+.projecten section p:nth-of-type(14),
+.projecten section p:nth-of-type(16) {
+    padding-top: 1.5em;
+}
+
+/* QUOTE INTERVIEWS */
+.projecten section p:nth-of-type(31) {
+    font-style: italic;
+    padding-bottom: 1.5em;
 }
 
 .projecten section p:nth-of-type(28) {
@@ -904,8 +917,11 @@ h1 {
 }
 
 .projecten section ul {
-    padding-left: 1.5em;
-    margin: 1em;
+    padding-left: 1em;
+}
+
+.projecten section p:last-of-type {
+    padding-bottom: 2em;
 }
 
 
@@ -938,7 +954,30 @@ h1 {
         padding-bottom: 20em;
     }
 
+    .projecten section ul {
+        padding-left: 1.5em;
+        margin: 1em;
+    }
+
     /* TEKSTEN PROJECTEN */
+    /* PROJECT P */
+    .projecten section p:nth-of-type(6),
+    .projecten section p:nth-of-type(8),
+    .projecten section p:nth-of-type(10),
+    .projecten section p:nth-of-type(12),
+    .projecten section p:nth-of-type(14),
+    .projecten section p:nth-of-type(16),
+    .projecten section p:nth-of-type(18),
+    .projecten section p:nth-of-type(20),
+    .projecten section p:nth-of-type(24),
+    .projecten section p:nth-of-type(35),
+    .projecten section p:nth-of-type(36),
+    .projecten section p:nth-of-type(37),
+    .projecten section p:nth-of-type(42),
+    .projecten section p:nth-of-type(43)        {
+        padding-top: 1em;
+    }
+
     .projecten h2,
     .projectpage3 h2,
     .projectpage4 h2,
@@ -1038,7 +1077,9 @@ h1 {
         width: 50%;
     }
 
-
+    .projecten section p:last-of-type {
+        padding-bottom: 12em;
+    }
 
 
 
@@ -1103,10 +1144,6 @@ h1 {
         margin:0;
         position: absolute;
         left: 0; top: 170% ;
-    }
-
-    .projecten section p:last-of-type {
-        padding-bottom: 15em;
     }
     
 }
@@ -1481,13 +1518,20 @@ h1 {
 /* ********************************************************************* */ 
 /* ********************************************************************* */ 
 /* ********************************************************************* */
+.projecten footer p {
+    text-align: center;
+    font-size: 0.7em;
+    padding-bottom: 10em;
+}
+
 /* ********************************************************************* */
 /* GROTER DEVICE */
 /* ********************************************************************* */ 
 @media (min-width:50em) {
-    footer p {
+    .projecten footer p {
         position: absolute;
         left: 0;
         padding: 1em;
+        font-size: 1em;
     }
 }
