@@ -365,7 +365,9 @@ h1 {
 }
 
 /* button bekijk projecten section 2 */
-.homepage section:nth-of-type(2) a {
+.homepage section:nth-of-type(2) a,
+.homepage section:nth-of-type(3) a,
+.homepage section:nth-of-type(4) a {
     text-decoration: none;
     border-radius: 0.7em;
     font-size: 0.8em;
@@ -377,6 +379,14 @@ h1 {
     position: absolute;
     z-index: 30;
     top: 180%; left: 10%;
+}
+
+.homepage section:nth-of-type(3) a {
+    top: 270%; 
+}
+
+.homepage section:nth-of-type(4) a {
+    top: 375%; left: 60%;
 }
 
 /* IMAGE GROOT + TEKST WEG BIJ KLEIN DEVICE */
@@ -624,13 +634,21 @@ h1 {
     }
 
     /* button bekijk projecten section 2 */
-    .homepage section:nth-of-type(2) a {
+    .homepage section:nth-of-type(2) a,
+    .homepage section:nth-of-type(3) a,
+    .homepage section:nth-of-type(4) a {
         font-size: 1em;
         padding: 1.5em;
         top: 120%; left: 10%;
     }
 
-    
+    .homepage section:nth-of-type(3) a {
+        top: 270%;
+    }
+
+    .homepage section:nth-of-type(4) a {
+        top: 360%; 
+    }
 }
 
 
@@ -648,7 +666,9 @@ h1 {
     }
 
     /* button bekijk projecten section 2 */
-    .homepage section:nth-of-type(2) a {
+    .homepage section:nth-of-type(2) a,
+    .homepage section:nth-of-type(3) a,
+    .homepage section:nth-of-type(4) a {
         margin-left: 4em;
     }
 }
