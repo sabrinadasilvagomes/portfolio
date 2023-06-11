@@ -443,6 +443,8 @@ h1 {
 .homepage section:nth-of-type(5) ul{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-left: 0;
 }
 
