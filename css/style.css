@@ -443,12 +443,14 @@ h1 {
 .homepage section:nth-of-type(5) ul{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-left: 0;
 }
 
 .homepage section:nth-of-type(5) ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     text-align: center;
 }
@@ -457,7 +459,6 @@ h1 {
     display: flex;
     width: 5em;
 }
-
 
 
 
