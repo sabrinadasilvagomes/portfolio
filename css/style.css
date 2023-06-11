@@ -859,13 +859,20 @@ h1 {
     justify-content: center;
 }
 
+/* PROJECT VIDEO */
 .projecten video {
+    width: 90%;
+}
+
+.projectpage3 video {
     display: flex;
     margin-left: auto; margin-right: auto;
     padding-bottom: 2em;
     width: 20em;
 }
 
+
+/* PROJECT P */
 .projecten section p:nth-of-type(6),
 .projecten section p:nth-of-type(8),
 .projecten section p:nth-of-type(10),
@@ -1017,6 +1024,12 @@ h1 {
         justify-content: center;
         align-items: center;
         margin: auto; 
+    }
+
+    /* VIDEO projectpage1 GROOT DEVICE */
+    .projecten video {
+        width:640;
+        height:380;
     }
 
     .projecten section img:nth-of-type(8),
