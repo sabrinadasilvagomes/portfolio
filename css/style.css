@@ -91,10 +91,6 @@ p {
     background-color: #f5ece3;
 }
 
-.homepage section:nth-of-type(6) {
-    background-color: #e8d8d3;
-}
-
 /* TEKSTEN */
 h1, h2, h3, h4, h5, h6, p {
     color:var(--TekstKleur);
@@ -393,11 +389,13 @@ h1 {
 }
 
 /* SABRINA IMG KLEIN DEVICE */
-.homepage section img:last-of-type {
+.homepage section:nth-of-type(1) img:last-of-type,
+.homepage section:nth-of-type(2) img:last-of-type,
+.homepage section:nth-of-type(3) img:last-of-type,
+.homepage section:nth-of-type(4) img:last-of-type {
     position: absolute;
     margin:  auto;
     z-index: 20;
-
     width: auto;
     height: auto;
     max-width: 100%;
@@ -429,17 +427,41 @@ h1 {
     right: 0; top: 340%;
 }
 
-.homepage section:nth-of-type(5) img:nth-of-type(2) {
-    width: 8em;
-    position: absolute;
-    left: 0; top:440%;
+
+
+
+
+
+/* SECTION 6 */
+.homepage section:nth-of-type(5) h2 {
+    padding-top: 2em;
+    padding-bottom: 10%;
+    text-align: center;
+    font-size: 1.3em;
 }
 
-.homepage section:nth-of-type(6) img:nth-of-type(2) {
-    width: 8em;
-    position: absolute;
-    right: 0; top: 540%;
+.homepage section:nth-of-type(5) ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
 }
+
+.homepage section:nth-of-type(5) ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.homepage section:nth-of-type(5) ul li img {
+    display: flex;
+    width: 5em;
+}
+
+
+
+
+
 
 
 /* ********************************************************************* */
@@ -469,14 +491,12 @@ h1 {
         display: none;
     }
 
-    .homepage section:nth-of-type(3) span:nth-of-type(1),
-    .homepage section:nth-of-type(5) span:nth-of-type(1) {
+    .homepage section:nth-of-type(3) span:nth-of-type(1) {
         font-family: 'josefinbold';
     }
 
     .homepage section:nth-of-type(3) span:nth-of-type(2) a,
-    .homepage section:nth-of-type(4) span:nth-of-type(1) a,
-    .homepage section:nth-of-type(6) span:nth-of-type(1) a {
+    .homepage section:nth-of-type(4) span:nth-of-type(1) a {
         font-family: 'josefinbold';
         color:var(--MenuKnop);
     }
@@ -492,6 +512,7 @@ h1 {
 
     /* plaatsing blad 2 + afmetingen */
     .homepage section:nth-of-type(1) img:nth-of-type(3) {
+        width: 7em;
         position: absolute;
         left: 0; top: 10% ;
     }
@@ -520,17 +541,6 @@ h1 {
         left: 0; top: 310%;
     }
 
-    .homepage section:nth-of-type(5) img:nth-of-type(3) {
-        width: 7em;
-        position: absolute;
-        right: 0; top: 410%;
-    }
-
-    .homepage section:nth-of-type(6) img:nth-of-type(3) {
-        width: 7em;
-        position: absolute;
-        left: 0; top: 510%;
-    }
 
     /* teksten h1 groot device */
     
@@ -560,18 +570,32 @@ h1 {
         top: 310% ;
     }
 
-    .homepage section:nth-of-type(5) h1 {
-        top: 450%;
+    /* SECTION 6 */
+    .homepage section:nth-of-type(5) h2 {
+        padding-bottom: 0;
     }
 
-    .homepage section:nth-of-type(6) h1 {
-        top: 510%;
+    .homepage section:nth-of-type(5) ul li img {
+        width: 7em;
     }
 }
 
 @media (min-width:50em) {
     .homepage section h1 {
         padding-right: 2em;
+    }
+
+
+    .homepage section:nth-of-type(5) ul li img {
+        width: 8em;
+        margin-left: 5em;
+        margin-right: 5em;
+        padding-top: 4em;
+    }
+
+    .homepage section:nth-of-type(5) ul {
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -586,17 +610,13 @@ h1 {
     .homepage section:nth-of-type(2) img:nth-of-type(3),
     .homepage section:nth-of-type(3) img:nth-of-type(2),    
     .homepage section:nth-of-type(3) img:nth-of-type(3),
-    .homepage section:nth-of-type(4) img:nth-of-type(3),
-    .homepage section:nth-of-type(5) img:nth-of-type(3),
-    .homepage section:nth-of-type(6) img:nth-of-type(3) {
+    .homepage section:nth-of-type(4) img:nth-of-type(3) {
         width: 12em;
     }
 
     .homepage section:nth-of-type(1) img:nth-of-type(2),
     .homepage section:nth-of-type(2) img:nth-of-type(2),
-    .homepage section:nth-of-type(4) img:nth-of-type(2),
-    .homepage section:nth-of-type(5) img:nth-of-type(2),
-    .homepage section:nth-of-type(6) img:nth-of-type(2) {
+    .homepage section:nth-of-type(4) img:nth-of-type(2){
         width: 13em;
     }
 
@@ -606,6 +626,8 @@ h1 {
         padding: 1.5em;
         top: 120%; left: 10%;
     }
+
+    
 }
 
 
@@ -1497,7 +1519,8 @@ h1 {
         padding: 1em;
     }
 
-    .contactme h2 {
+    .contactme h2,
+    .homepage section:nth-of-type(5) h2 {
         text-align: center;
         font-size: 3em;
 
@@ -1518,20 +1541,53 @@ h1 {
 /* ********************************************************************* */ 
 /* ********************************************************************* */ 
 /* ********************************************************************* */
-.projecten footer p {
+.projecten footer p,
+.contact footer p,
+.projectpage2 footer p,
+.projectpage3 footer p,
+.projectpage4 footer p,
+.illustraties footer p,
+.homepage section:nth-of-type(5) p:last-of-type {
     text-align: center;
     font-size: 0.7em;
     padding-bottom: 10em;
 }
 
+.homepage section:nth-of-type(5) p:last-of-type {
+    padding-bottom: 0;
+    position: absolute;
+    left: 0; right: 0; 
+    padding-top: 5%;
+}
+
+
 /* ********************************************************************* */
 /* GROTER DEVICE */
 /* ********************************************************************* */ 
-@media (min-width:50em) {
-    .projecten footer p {
+@media (min-width:30em) {
+    .homepage section:nth-of-type(5) p:last-of-type {
+        padding-top: 5%;
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width:45em) {
+    .projecten footer p,
+    .contact footer p,
+    .projectpage2 footer p,
+    .projectpage3 footer p,
+    .projectpage4 footer p,
+    .illustraties footer p {
         position: absolute;
         left: 0;
         padding: 1em;
         font-size: 1em;
+    }
+
+    .homepage section:nth-of-type(5) p:last-of-type {
+        position: absolute;
+        text-align: left;
+        top: 505%;
+        padding: 1em;
     }
 }
