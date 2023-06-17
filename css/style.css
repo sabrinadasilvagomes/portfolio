@@ -67,25 +67,17 @@ p {
 }
 
 /* ACHTERGROND KLEUREN */
-.homepage section:nth-of-type(1) {
+.homepage section:nth-of-type(1),
+.homepage section:nth-of-type(3),
+.homepage section:nth-of-type(5) {
     background-color: #f5ece3;
 }
 
-.homepage section:nth-of-type(2) {
-    background-color: #e8d8d3;
-}
-
-.homepage section:nth-of-type(3) {
-    background-color: #ddcdc3;
-}
-
+.homepage section:nth-of-type(2),
 .homepage section:nth-of-type(4) {
     background-color: #e8d8d3;
 }
 
-.homepage section:nth-of-type(5) {
-    background-color: #f5ece3;
-}
 
 /* TEKSTEN */
 h1, h2, h3, h4, h5, h6, p {
@@ -333,8 +325,8 @@ h1 {
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .homepage section{
@@ -352,8 +344,8 @@ h1 {
  
 .homepage section {
     display: block;
-    height:100%;
-    width:100%;
+    height:100vh;
+    width:100vw;
     box-sizing:border-box;
 
     height:100vh;
@@ -421,7 +413,7 @@ h1 {
     right: 0; top: 40% ;
 }
 
-.homepage section:nth-of-type(2) img:nth-of-type(2) {
+.homepage section:nth-of-type(2) img:nth-of-type(2)  {
     width: 8em;
     position: absolute;
     left: 0; top:140%;
@@ -520,7 +512,7 @@ h1 {
     }
 
     /* plaatsing blad 2 + afmetingen */
-    .homepage section:nth-of-type(1) img:nth-of-type(3) {
+    .homepage section:nth-of-type(1) img:nth-of-type(3)  {
         width: 7em;
         position: absolute;
         left: 0; top: 10% ;
@@ -753,21 +745,13 @@ h1 {
 /* <!-- *********************************************************** -->*/
 /* PROJECTEN KLEUREN*/
 /* <!-- *********************************************************** -->*/
-.projectpage1 {
+.projectpage1,
+.projectpage2,
+.projectpage3,
+.projectpage4 {
     background-color:var(--BackgroundSlideOneFive);
 }
 
-.projectpage3 {
-    background-color: var(--BackgroundSlideTwoFourSix);
-}
-
-.projectpage4 {
-    background-color: var(--BackgroundSlideThree);
-}
-
-.projectpage2 {
-    background-color: var(--BackgroundSlideTwoFourSix);
-}
 
 
 /* <!-- *********************************************************** -->*/
@@ -1475,7 +1459,9 @@ h1 {
 /* <!-- *********************************************************** -->*/
 /* CV KLEUREN*/
 /* <!-- *********************************************************** -->*/
-.cv {
+.cv,
+.cveducation, 
+.cvadditional {
     background-color:var(--BackgroundSlideOneFive);
     max-width: 40em;
 }
@@ -1488,13 +1474,6 @@ h1 {
     padding-bottom: 30em!important;
 }
 
-.cveducation{
-    background-color: var(--BackgroundSlideTwoFourSix);
-}
-
-.cvadditional {
-    background-color: var(--BackgroundSlideOneFive);
-}
 
 .cv h2:nth-of-type(2),
 .cveducation h2:nth-of-type(2) {
@@ -1608,6 +1587,7 @@ h1 {
 
 .contact {
     background-color: var(--BackgroundSlideTwoFourSix);
+    height: max-content;
 }
 
 .contact h3 {
@@ -1641,10 +1621,19 @@ h1 {
     margin: 1em 2em 2em 2em;
 }
 
+/* BLAD KLEIN DEVICE WEG CONTACT + HOMEPAGE LAATSTE SECTION CONTACT*/
+.contactme section img:nth-of-type(1),
+.contactme section img:nth-of-type(2),
+.homepage section:last-of-type ul:nth-of-type(2) img:nth-of-type(1),
+.homepage section:last-of-type ul:nth-of-type(2) img:nth-of-type(2)  {
+    display: none;
+} 
+
+
 /* ********************************************************************* */
 /* GROTER DEVICE */
 /* ********************************************************************* */ 
-@media (min-width:50em) {
+@media (min-width:60em) {
     .contactme ul {
         display: flex;
     }
@@ -1671,6 +1660,39 @@ h1 {
         margin: 2em;
         margin-bottom: 0;
     }
+
+    /* BLAD RECHTS CONTACT + LAATSTE SECTION HOMEPAGE CONTACT*/
+    .contactme section img:nth-of-type(1),
+    .homepage section:last-of-type ul:nth-of-type(2) li:nth-of-type(1) img:nth-of-type(1)  {
+        display: flex;
+        position: absolute;
+        right: 0; top: 50%;
+        margin: 0;
+        padding: 0;
+        width: 12em;
+    }
+
+    .homepage section:last-of-type ul:nth-of-type(2) li:nth-of-type(1) img:nth-of-type(1) {
+        top: 460%;
+    }
+
+    /* BLAD LINKS CONTACT + HOMEPAGE LAATSTE SECTION CONTACT */
+    .contactme section img:nth-of-type(2),
+    .homepage section:last-of-type ul:nth-of-type(2) li:nth-of-type(2) img:nth-of-type(1) {
+        display: flex;
+        position: absolute;
+        left: 0; top: 10%;
+        margin: 0;
+        padding: 0;
+        width: 13em;
+    }
+
+    /* BLAD LAATSTE SECTION HOMEPAGE CONTACT */
+    .homepage section:last-of-type ul:nth-of-type(2) li:nth-of-type(2) img:nth-of-type(1) {
+        top: 420%;
+    }
+
+
 }
 
 
@@ -1686,6 +1708,7 @@ h1 {
 /* ********************************************************************* */ 
 /* ********************************************************************* */
 .projectpage1 footer p,
+.cv footer p,
 .contact footer p,
 .projectpage2 footer p,
 .projectpage3 footer p,
@@ -1717,6 +1740,7 @@ h1 {
 
 @media (min-width:45em) {
     .projectpage1 footer p,
+    .cv footer p,
     .contact footer p,
     .projectpage2 footer p,
     .projectpage3 footer p,
