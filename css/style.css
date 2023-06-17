@@ -108,7 +108,7 @@ h1 {
 } 
 
 .contactme h1,
-.projecten h1,
+.projectpage1 h1,
 .projectpage3 h1,
 .projectpage4 h1,
 .projectpage2 h1,
@@ -757,7 +757,7 @@ h1 {
 /* <!-- *********************************************************** -->*/
 /* PROJECTEN KLEUREN*/
 /* <!-- *********************************************************** -->*/
-.projecten {
+.projectpage1 {
     background-color:var(--BackgroundSlideOneFive);
 }
 
@@ -778,7 +778,7 @@ h1 {
 /* ALGEMEEN */
 /* <!-- *********************************************************** -->*/
 
-.projecten, 
+.projectpage1, 
 .projectpage3,
 .projectpage2, 
 .projectpage4,
@@ -789,7 +789,7 @@ h1 {
 }
 
 /* IMAGE BLAD NIET ZICHTBAAR KLEIN DEVICE */
-.projecten section:nth-of-type(2),
+.projectpage1 section:nth-of-type(2),
 .projectpage2 section:nth-of-type(2),
 .projectpage3 section:nth-of-type(2),
 .projectpage4 section:nth-of-type(2),
@@ -800,7 +800,7 @@ h1 {
 }
 
 /* TITELNAAM PROJECT  */
-.projecten h2,
+.projectpage1 h2,
 .projectpage3 h2,
 .projectpage4 h2,
 .projectpage2 h2,
@@ -814,7 +814,7 @@ h1 {
 }
 
 /* TEKSTKOP FOCUS */
-.projecten h3,
+.projectpage1 h3,
 .projectpage3 h3,
 .projectpage2 h3,
 .projectpage4 h3 {
@@ -826,7 +826,7 @@ h1 {
 }
 
 /* HET PROCES TEKSTKOP */
-.projecten section h3,
+.projectpage1 section h3,
 .projectpage3 section h3,
 .projectpage4 section h3,
 .projectpage2 section h3 {
@@ -846,7 +846,7 @@ h1 {
 }
 
 /* TITELKOPPEN */
-.projecten h4,
+.projectpage1 h4,
 .projectpage3 h4,
 .projectpage2 h4,
 .projectpage4 h4 {
@@ -857,16 +857,23 @@ h1 {
     font-family: 'josefinbold';
 }
 
-.projecten section h4:nth-of-type(3),
-.projecten section h4:nth-of-type(4),
-.projecten section h4:nth-of-type(5),
-.projecten section h4:nth-of-type(11){
+.projectpage1 section h4:nth-of-type(3),
+.projectpage1 section h4:nth-of-type(4),
+.projectpage1 section h4:nth-of-type(5),
+.projectpage1 section h4:nth-of-type(11),
+.projectpage2 section h4:nth-of-type(3),
+.projectpage2 section h4:nth-of-type(4),
+.projectpage2 section h4:nth-of-type(5),
+.projectpage2 section h4:nth-of-type(11),
+.projectpage3 section h4:nth-of-type(4),
+.projectpage3 section h4:nth-of-type(5),
+.projectpage3 section h4:nth-of-type(11){
     margin-top: 5em;
 }
 
 /* GEWONE TEKST PROJECTEN */
-.projecten section p,
-.projecten section ul li,
+.projectpage1 section p,
+.projectpage1 section ul li,
 .projectpage3 section p,
 .projectpage2 section p,
 .projectpage4 section p {
@@ -875,7 +882,7 @@ h1 {
 }
 
 /* INLEIDING TEKST PROJECTEN */
-.projecten p,
+.projectpage1 p,
 .projectpage3 P,
 .projectpage2 P,
 .projectpage4 p{
@@ -895,7 +902,7 @@ h1 {
 }
 
 /* PROJECT IMAGES */
-.projecten img, 
+.projectpage1 img, 
 .projectpage3 section img,
 .projectpage4 section img,
 .projectpage2 section img{
@@ -905,67 +912,118 @@ h1 {
     justify-content: center;
 }
 
+.projectpage3 section img:nth-of-type(1),
+.projectpage3 section img:nth-of-type(2),
+.projectpage3 section img:nth-of-type(3),
+.projectpage3 section img:nth-of-type(6),
+.projectpage3 section img:nth-of-type(8)  {
+    width: 60%;
+    margin-top: 0;
+}
+
+.projectpage3 section img:nth-of-type(7) {
+    width: 40%;
+    margin-top: 0;
+}
+
+.projectpage3 section img:nth-of-type(6),
+.projectpage3 section img:nth-of-type(7) {
+    margin-bottom: 8em;
+
+}
+
+
 /* PROJECT VIDEO */
-.projecten video {
+.projectpage1 video,
+.projectpage2 video,
+.projectpage3 video,
+.projectpage4 video {
     width: 100%;
 }
 
-.projectpage3 video {
-    display: flex;
-    margin-left: auto; margin-right: auto;
-    padding-bottom: 2em;
-    width: 20em;
-}
-
-
 /* PROJECT P */
-.projecten section p:nth-of-type(6),
-.projecten section p:nth-of-type(8),
-.projecten section p:nth-of-type(10),
-.projecten section p:nth-of-type(12),
-.projecten section p:nth-of-type(14),
-.projecten section p:nth-of-type(16),
-.projecten section p:nth-of-type(18),
-.projecten section p:nth-of-type(20),
-.projecten section p:nth-of-type(24),
-.projecten section p:nth-of-type(35),
-.projecten section p:nth-of-type(36),
-.projecten section p:nth-of-type(37),
-.projecten section p:nth-of-type(42),
-.projecten section p:nth-of-type(43)        {
+.projectpage1 section p:nth-of-type(6),
+.projectpage1 section p:nth-of-type(8),
+.projectpage1 section p:nth-of-type(10),
+.projectpage1 section p:nth-of-type(12),
+.projectpage1 section p:nth-of-type(14),
+.projectpage1 section p:nth-of-type(16),
+.projectpage1 section p:nth-of-type(18),
+.projectpage1 section p:nth-of-type(20),
+.projectpage1 section p:nth-of-type(24),
+.projectpage1 section p:nth-of-type(35),
+.projectpage1 section p:nth-of-type(36),
+.projectpage1 section p:nth-of-type(37),
+.projectpage1 section p:nth-of-type(42),
+.projectpage1 section p:nth-of-type(43){
     font-family: 'josefinbold';
 }
 
-.projecten section p:nth-of-type(8),
-.projecten section p:nth-of-type(10),
-.projecten section p:nth-of-type(14),
-.projecten section p:nth-of-type(16) {
+.projectpage2 section p:nth-of-type(8),
+.projectpage2 section p:nth-of-type(10),
+.projectpage2 section p:nth-of-type(12),
+.projectpage2 section p:nth-of-type(16),
+.projectpage2 section p:nth-of-type(18),
+.projectpage2 section p:nth-of-type(25),
+.projectpage2 section p:nth-of-type(26),
+.projectpage2 section p:nth-of-type(27),
+.projectpage2 section p:nth-of-type(31),
+.projectpage2 section p:nth-of-type(33),
+.projectpage2 section p:nth-of-type(35) {
+    font-family: 'josefinbold';
+}
+
+.projectpage3 section p:nth-of-type(6),
+.projectpage3 section p:nth-of-type(8),
+.projectpage3 section p:nth-of-type(13),
+.projectpage3 section p:nth-of-type(15),
+.projectpage3 section p:nth-of-type(17),
+.projectpage3 section p:nth-of-type(19) {
+    font-family: 'josefinbold';
+}
+
+
+.projectpage1 section p:nth-of-type(8),
+.projectpage1 section p:nth-of-type(10),
+.projectpage1 section p:nth-of-type(14),
+.projectpage1 section p:nth-of-type(16) {
     padding-top: 1.5em;
 }
 
 /* QUOTE INTERVIEWS */
-.projecten section p:nth-of-type(31) {
+.projectpage1 section p:nth-of-type(31),
+.projectpage2 section p:nth-of-type(21),
+.projectpage3 section p:nth-of-type(21) {
     font-style: italic;
     padding-bottom: 1.5em;
 }
 
-.projecten section p:nth-of-type(28) {
+.projectpage1 section p:nth-of-type(28) {
     font-family: 'josefinbold';
     font-style: italic;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 }
 
-.projecten section ul li {
+.projectpage1 section ul li,
+.projectpage2 section ul li,
+.projectpage3 section ul li,
+.projectpage4 section ul li {
     font-family: 'josefin';
     margin: 0.5em;
 }
 
-.projecten section ul {
+.projectpage1 section ul,
+.projectpage2 section ul,
+.projectpage3 section ul,
+.projectpage4 section ul {
     padding-left: 1em;
 }
 
-.projecten section p:last-of-type {
+.projectpage1 section p:last-of-type,
+.projectpage2 section p:last-of-type,
+.projectpage3 section p:last-of-type,
+.projectpage4 section p:last-of-type {
     padding-bottom: 2em;
 }
 
@@ -975,7 +1033,7 @@ h1 {
 /* ********************************************************************* */ 
 
 @media (min-width:50em) {
-    .projecten,
+    .projectpage1,
     .projectpage3,
     .projectpage4,
     .projectpage2,
@@ -988,42 +1046,59 @@ h1 {
     }
 
     /* GEWONE TEKST PROJECTEN */
-    .projecten section p,
+    .projectpage1 section p,
     .projectpage3 section p,
     .projectpage2 section p,
     .projectpage4 section p {
         font-size: 1.0em;
-}
+    }
 
     .cveducation h5:last-of-type {
         padding-bottom: 20em;
     }
 
-    .projecten section ul {
+    .projectpage1 section ul {
         padding-left: 1.5em;
         margin: 1em;
     }
 
     /* TEKSTEN PROJECTEN */
     /* PROJECT P */
-    .projecten section p:nth-of-type(6),
-    .projecten section p:nth-of-type(8),
-    .projecten section p:nth-of-type(10),
-    .projecten section p:nth-of-type(12),
-    .projecten section p:nth-of-type(14),
-    .projecten section p:nth-of-type(16),
-    .projecten section p:nth-of-type(18),
-    .projecten section p:nth-of-type(20),
-    .projecten section p:nth-of-type(24),
-    .projecten section p:nth-of-type(35),
-    .projecten section p:nth-of-type(36),
-    .projecten section p:nth-of-type(37),
-    .projecten section p:nth-of-type(42),
-    .projecten section p:nth-of-type(43)        {
+    .projectpage1 section p:nth-of-type(6),
+    .projectpage1 section p:nth-of-type(8),
+    .projectpage1 section p:nth-of-type(10),
+    .projectpage1 section p:nth-of-type(12),
+    .projectpage1 section p:nth-of-type(14),
+    .projectpage1 section p:nth-of-type(16),
+    .projectpage1 section p:nth-of-type(18),
+    .projectpage1 section p:nth-of-type(20),
+    .projectpage1 section p:nth-of-type(24),
+    .projectpage1 section p:nth-of-type(35),
+    .projectpage1 section p:nth-of-type(36),
+    .projectpage1 section p:nth-of-type(37),
+    .projectpage1 section p:nth-of-type(42),
+    .projectpage1 section p:nth-of-type(43),
+    .projectpage2 section p:nth-of-type(8),
+    .projectpage2 section p:nth-of-type(10),
+    .projectpage2 section p:nth-of-type(12),
+    .projectpage2 section p:nth-of-type(16),
+    .projectpage2 section p:nth-of-type(18),
+    .projectpage2 section p:nth-of-type(25),
+    .projectpage2 section p:nth-of-type(26),
+    .projectpage2 section p:nth-of-type(27),
+    .projectpage2 section p:nth-of-type(31),
+    .projectpage2 section p:nth-of-type(33),
+    .projectpage2 section p:nth-of-type(35),
+    .projectpage3 section p:nth-of-type(8),
+    .projectpage3 section p:nth-of-type(13),
+    .projectpage3 section p:nth-of-type(15),
+    .projectpage3 section p:nth-of-type(17),
+    .projectpage3 section p:nth-of-type(19) {
         padding-top: 1em;
     }
 
-    .projecten h2,
+
+    .projectpage1 h2,
     .projectpage3 h2,
     .projectpage4 h2,
     .projectpage2 h2,
@@ -1033,7 +1108,7 @@ h1 {
         font-size: 2.5em;
     }
     
-    .projecten h3,
+    .projectpage1 h3,
     .projectpage3 h3,
     .projectpage4 h3,
     .projectpage2 h3,
@@ -1044,31 +1119,44 @@ h1 {
         margin-top: 1em;
     }
 
-    .projecten > h3:first-of-type,
+    .projectpage1 > h3:first-of-type,
     .projectpage3 > h3:first-of-type,
     .projectpage2 > h3:first-of-type,
     .projectpage4 > h3:first-of-type {
         font-size: 1.2em;
     }
 
-    .projecten section h3:nth-of-type(2),
-    .projecten section h3:nth-of-type(3),
-    .projecten section h3:nth-of-type(4),
-    .projecten section h3:nth-of-type(5),
-    .projecten section h3:nth-of-type(6),
-    .projecten section h3:nth-of-type(7),
-    .projecten section h3:nth-of-type(8)  {
+    .projectpage1 section h3:nth-of-type(2),
+    .projectpage1 section h3:nth-of-type(3),
+    .projectpage1 section h3:nth-of-type(4),
+    .projectpage1 section h3:nth-of-type(5),
+    .projectpage1 section h3:nth-of-type(6),
+    .projectpage1 section h3:nth-of-type(7),
+    .projectpage1 section h3:nth-of-type(8),
+    .projectpage2 section h3:nth-of-type(2),
+    .projectpage2 section h3:nth-of-type(3),
+    .projectpage2 section h3:nth-of-type(4),
+    .projectpage2 section h3:nth-of-type(5),
+    .projectpage2 section h3:nth-of-type(6),
+    .projectpage2 section h3:nth-of-type(7),
+    .projectpage3 section h3:nth-of-type(2),
+    .projectpage3 section h3:nth-of-type(3),
+    .projectpage3 section h3:nth-of-type(4),
+    .projectpage3 section h3:nth-of-type(5),
+    .projectpage3 section h3:nth-of-type(6),
+    .projectpage3 section h3:nth-of-type(7),
+    .projectpage3 section h3:nth-of-type(8)  {
         padding-top: 4em;
     }
 
-    .projecten h4,
+    .projectpage1 h4,
     .projectpage3 h4,
     .projectpage4 h4,
     .projectpage2 h4 {
         font-size: 1.2em;
     }
 
-    .projecten p,
+    .projectpage1 p,
     .projectpage3 p, 
     .projectpage4 p,
     .projectpage2 p{
@@ -1076,23 +1164,6 @@ h1 {
     }
 
     /* AFBEELDINGEN PROJECTEN */
-    .projectpage3 section img {
-        width: 26em;
-    }
-    
-    .projectpage3 section img:nth-of-type(2) {
-        width: 100%;
-    }
-
-    .projectpage3 section img:nth-of-type(3) {
-        width: 10em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
-    
-
     .projectpage2 section img:nth-of-type(2),
     .projectpage2 section img:nth-of-type(3) {
         width: 35em;
@@ -1102,27 +1173,38 @@ h1 {
     }
 
 
-    /* VIDEO projectpage3 GROOT DEVICE */
-    .projectpage3 video {
-        width: 22em;
-        justify-content: center;
-        align-items: center;
-        margin: auto; 
+    .projectpage3 section img:nth-of-type(1),
+    .projectpage3 section img:nth-of-type(2),
+    .projectpage3 section img:nth-of-type(3),
+    .projectpage3 section img:nth-of-type(6),
+    .projectpage3 section img:nth-of-type(8)  {
+        width: 40%;
+    }
+
+    .projectpage3 section img:nth-of-type(7) {
+        width: 25%;
     }
 
     /* VIDEO projectpage1 GROOT DEVICE */
-    .projecten video {
+    .projectpage1 video,
+    .projectpage2 video,
+    .projectpage3 video,
+    .projectpage4 video {
         width:640;
         height:380;
     }
 
-    .projecten section img:nth-of-type(8),
-    .projecten section img:nth-of-type(9),
-    .projecten section img:nth-of-type(10) {
+    /* IMAGES PROTOTYPES */
+    .projectpage1 section img:nth-of-type(8),
+    .projectpage1 section img:nth-of-type(9),
+    .projectpage1 section img:nth-of-type(10) {
         width: 50%;
     }
 
-    .projecten section p:last-of-type {
+    .projectpage1 section p:last-of-type,
+    .projectpage2 section p:last-of-type,
+    .projectpage3 section p:last-of-type,
+    .projectpage4 section p:last-of-type   {
         padding-bottom: 12em;
     }
 
@@ -1134,7 +1216,7 @@ h1 {
 }
 
 @media (min-width:70em) {
-    .projecten,
+    .projectpage1,
     .projectpage3,
     .projectpage4,
     .projectpage2 {
@@ -1142,7 +1224,7 @@ h1 {
     }
 
     /* AFMETINGEN BLAD EN VISIBILITY */
-    .projecten section:nth-of-type(2),
+    .projectpage1 section:nth-of-type(2),
     .projectpage2 section:nth-of-type(2),
     .projectpage3 section:nth-of-type(2),
     .projectpage4 section:nth-of-type(2),
@@ -1152,7 +1234,7 @@ h1 {
         display: block;
     }
     
-    .projecten section:last-of-type img:nth-of-type(1),
+    .projectpage1 section:last-of-type img:nth-of-type(1),
     .projectpage2 section:nth-of-type(2) img:nth-of-type(1),
     .projectpage3 section:nth-of-type(2) img:nth-of-type(1),
     .projectpage4 section:nth-of-type(2) img:nth-of-type(1),
@@ -1164,7 +1246,7 @@ h1 {
         left: 0; top: 10% ;
     }
     
-    .projecten section:last-of-type img:nth-of-type(2),
+    .projectpage1 section:last-of-type img:nth-of-type(2),
     .projectpage2 section:nth-of-type(2) img:nth-of-type(2),
     .projectpage3 section:nth-of-type(2) img:nth-of-type(2),
     .projectpage4 section:nth-of-type(2) img:nth-of-type(2),
@@ -1564,7 +1646,7 @@ h1 {
 /* ********************************************************************* */ 
 /* ********************************************************************* */ 
 /* ********************************************************************* */
-.projecten footer p,
+.projectpage1 footer p,
 .contact footer p,
 .projectpage2 footer p,
 .projectpage3 footer p,
@@ -1595,7 +1677,7 @@ h1 {
 }
 
 @media (min-width:45em) {
-    .projecten footer p,
+    .projectpage1 footer p,
     .contact footer p,
     .projectpage2 footer p,
     .projectpage3 footer p,
