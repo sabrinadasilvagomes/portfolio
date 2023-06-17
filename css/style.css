@@ -825,19 +825,6 @@ h1 {
     margin-bottom: 3em;
 }
 
-/* HET PROCES TEKSTKOP */
-.projectpage1 section h3,
-.projectpage3 section h3,
-.projectpage4 section h3,
-.projectpage2 section h3 {
-    padding-bottom: 0;
-    margin-bottom: 0;
-
-    font-size: 1.5em;
-    text-align: start;
-    font-family: 'josefinbold';
-}
-
 /* ALINEAS */
 .projectpage3 section p:nth-of-type(2),
 .projectpage4 section p:nth-of-type(2),
@@ -908,7 +895,7 @@ h1 {
 .projectpage2 section img{
     width: 100%;
     display: flex;
-    margin-left: auto; margin-right: auto; margin-top: 2em; margin-bottom: 3.5em;
+    margin-left: auto; margin-right: auto; margin-top: 2em; margin-bottom: 2em;
     justify-content: center;
 }
 
@@ -990,6 +977,16 @@ h1 {
     padding-top: 1.5em;
 }
 
+.projectpage2 section p:nth-of-type(18) {
+    margin-top: 2em;
+}
+
+
+/* IMAGE PROJECT 2 LAPTOP */
+.projectpage2 section img:nth-of-type(9) {
+    margin-bottom: 6em;
+}
+
 /* QUOTE INTERVIEWS */
 .projectpage1 section p:nth-of-type(31),
 .projectpage2 section p:nth-of-type(21),
@@ -1026,6 +1023,47 @@ h1 {
 .projectpage4 section p:last-of-type {
     padding-bottom: 2em;
 }
+
+
+/* GO TO TOP BUTTON */
+.projectpage1 .gototop a,
+.projectpage2 .gototop a,
+.projectpage3 .gototop a,
+.projectpage4 .gototop a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'josefinbold';
+    background-color:var(--HoverKnopIllustraties); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0.8em; /* Some padding */
+  }
+  
+  /* GO TO TOP BUTTON HOVER */
+  .projectpage1 .gototop a:hover,
+  .projectpage2 .gototop a:hover,
+    .projectpage3 .gototop a:hover,
+    .projectpage4 .gototop a:hover {
+    background-color:var(--ButtonKleur);
+  }
+
+  /* H3 KOPPER ACHTERGRONDKLEUR */
+  .projectpage1 section h3,
+  .projectpage2 section h3,
+  .projectpage3 section h3,
+  .projectpage4 section h3 {
+    background-color:var(--ButtonKleur);
+    padding: 0.5em;
+    color: white;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    text-align: start;
+    font-family: 'josefinbold';
+  }
+
 
 
 /* ********************************************************************* */
@@ -1094,9 +1132,8 @@ h1 {
     .projectpage3 section p:nth-of-type(15),
     .projectpage3 section p:nth-of-type(17),
     .projectpage3 section p:nth-of-type(19) {
-        padding-top: 1em;
+        margin-top: 1em;
     }
-
 
     .projectpage1 h2,
     .projectpage3 h2,
@@ -1146,7 +1183,7 @@ h1 {
     .projectpage3 section h3:nth-of-type(6),
     .projectpage3 section h3:nth-of-type(7),
     .projectpage3 section h3:nth-of-type(8)  {
-        padding-top: 4em;
+        margin-top: 4em;
     }
 
     .projectpage1 h4,
@@ -1161,15 +1198,6 @@ h1 {
     .projectpage4 p,
     .projectpage2 p{
         font-size: 1.1em;
-    }
-
-    /* AFBEELDINGEN PROJECTEN */
-    .projectpage2 section img:nth-of-type(2),
-    .projectpage2 section img:nth-of-type(3) {
-        width: 35em;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
     }
 
 
@@ -1190,8 +1218,8 @@ h1 {
     .projectpage2 video,
     .projectpage3 video,
     .projectpage4 video {
-        width:640;
-        height:380;
+        width:100%;
+        height:100%;
     }
 
     /* IMAGES PROTOTYPES */
@@ -1201,10 +1229,25 @@ h1 {
         width: 50%;
     }
 
-    .projectpage1 section p:last-of-type,
-    .projectpage2 section p:last-of-type,
-    .projectpage3 section p:last-of-type,
-    .projectpage4 section p:last-of-type   {
+    /* IMAGES FACES */
+    .projectpage2 section img:nth-of-type(6),
+    .projectpage2 section img:nth-of-type(10),
+    .projectpage2 section img:nth-of-type(11),
+    .projectpage2 section img:nth-of-type(12) {
+        width: 70%;
+        padding-bottom: 3em;
+    }
+
+    .projectpage2 section img:nth-of-type(1),
+    .projectpage3 section img:nth-of-type(1) {
+        padding-bottom: 3em;
+    }
+
+
+    .projectpage1 section:nth-of-type(1),
+    .projectpage2 section:nth-of-type(1),
+    .projectpage3 section:nth-of-type(1),
+    .projectpage4 section:nth-of-type(1)      {
         padding-bottom: 12em;
     }
 
