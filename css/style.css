@@ -33,13 +33,11 @@ html,body {
     --hamburgerHeight: 1.25rem;
     --MenuCircleHeight: calc(var(--MenuCircleSize) / 2);  
   }
-  
-
 
 /* ********************************************************************* */ 
 /* FONTS */
 /* ********************************************************************* */ 
-  @font-face {
+@font-face {
     font-family: 'josefin';
     src: url('../assets/JosefinSans-ExtraLight.ttf');
     font-style: normal;
@@ -50,8 +48,6 @@ html,body {
     src: url('../assets/JosefinSans-Medium.ttf');
     font-style: normal;
 }
-
-
 
 /* ********************************************************************* */ 
 /* ********************************************************************* */ 
@@ -99,7 +95,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
     font-size: 0.7em;
-    font-family: 'Josefin';
+    font-family: 'josefin';
 
     position: absolute;
     right: 1em;
@@ -1037,7 +1033,7 @@ h1 {
     text-decoration: none;
     font-family: 'josefinbold';
     background-color:var(--HoverKnopIllustraties); /* Set a background color */
-    color: white; /* Text color */
+    color: var(--KopTekst); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 0.8em; /* Some padding */
   }
@@ -1057,7 +1053,7 @@ h1 {
   .projectpage4 section h3 {
     background-color:var(--ButtonKleur);
     padding: 0.5em;
-    color: white;
+    color: var(--KopTekst);
     margin-bottom: 0;
     font-size: 1.5em;
     text-align: start;
